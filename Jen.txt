@@ -1,0 +1,67 @@
+git init
+git add .
+git commit -m "First commit"
+Create a new GitHub repository
+
+Go to github.com
+
+Click New Repository
+
+Name it portfolio
+
+git remote add origin https://github.com/YOURNAME/portfolio.git
+
+git push -u origin main
+
+Create Jenkins Pipeline (Easy Explanation)
+1. Open Jenkins
+
+Go to:
+
+http://your-server-ip:8080
+Create a New Pipeline Job
+
+Click New Item
+
+Enter name → portfolio-pipeline
+
+Select Pipeline
+
+Click OK
+Scroll to Pipeline
+
+Select Pipeline script from SCM
+
+SCM → Git
+
+Repository URL → your GitHub repository link
+Example:
+
+https://github.com/YOURNAME/portfolio.git
+Jenkinsfile
+pipeline {
+    agent any
+
+    stages {
+        stage('Pull Code') {
+            steps {
+                echo "Pulling latest code from GitHub"
+            }
+        }
+        stage('Build') {
+            steps {
+                echo "Building website (nothing to build for static site)"
+            }
+        }
+        stage('Deploy') {
+            steps {
+                echo "Deploying website..."
+            }
+        }
+    }
+}
+
+
+git add Jenkinsfile
+git commit -m "Added Jenkinsfile"
+git push
