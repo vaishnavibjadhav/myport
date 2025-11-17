@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vaishnavi Portfolio</title>
+
+    <!-- ALL CSS INCLUDED HERE -->
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f3f5f9;
+        }
+
+        /* NAVIGATION */
+        header {
+            background: white;
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid #e0e0e0;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #0057ff;
+        }
+
+        nav a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: #0057ff;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* HERO SECTION */
+        .hero {
+            background: linear-gradient(to right, #0057ff, #00c0ff);
+            color: white;
+            text-align: center;
+            padding: 80px 20px;
+        }
+
+        .hero h1 span {
+            color: yellow;
+        }
+
+        .btn {
+            background: white;
+            padding: 12px 25px;
+            color: #0057ff;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+            margin-top: 15px;
+            display: inline-block;
+        }
+
+        /* ABOUT SECTION */
+        .section {
+            padding: 50px 25px;
+            width: 85%;
+            margin: auto;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            margin: 20px 0;
+            border-radius: 10px;
+            box-shadow: 0px 2px 6px rgba(0,0,0,0.15);
+        }
+
+        /* FOOTER */
+        footer {
+            background: #222;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header>
+        <div class="logo">Vaishnavi</div>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About Me</a>
+            <a href="#projects">Projects</a>
+        </nav>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+        <h1>Hello, I'm <span>Vaishnavi</span></h1>
+        <p>Web Developer • Student • Tech Explorer</p>
+        <a class="btn" href="#about">Know More</a>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section class="section" id="about">
+        <div class="card">
+            <h2>About Me</h2>
+            <p>I am Vaishnavi, a passionate learner and web developer.  
+               I enjoy building websites and learning new technologies like Git, GitHub, Jenkins, and Machine Learning.</p>
+
+            <h3>Skills</h3>
+            <ul>
+                <li>HTML & CSS</li>
+                <li>Git & GitHub</li>
+                <li>Jenkins CI/CD</li>
+                <li>Responsive Web Design</li>
+                <li>Machine Learning (Basic)</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section class="section" id="projects">
+        <h2>My Projects</h2>
+
+        <div class="card">
+            <h3>Portfolio Website</h3>
+            <p>A clean personal portfolio using HTML + CSS.</p>
+        </div>
+
+        <div class="card">
+            <h3>ML Prediction Model</h3>
+            <p>Created a machine learning model for classification (practice project).</p>
+        </div>
+
+        <div class="card">
+            <h3>DevOps Pipeline</h3>
+            <p>Built a CI/CD pipeline using GitHub + Jenkins.</p>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        © 2025 Vaishnavi — All Rights Reserved
+    </footer>
+
+</body>
+</html>
