@@ -1,16 +1,9 @@
 pipeline {
     agent any
-
     stages {
-        stage('Build') {
+        stage('Test') {
             steps {
-                echo "Building Portfolio Website..."
-            }
-        }
-
-        stage('Deploy') {
-            steps {
-                echo "Deploying Website..."
+                echo "Jenkinsfile added successfully!"
             }
         }
     }
